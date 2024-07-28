@@ -1,0 +1,47 @@
+header{
+    background-color: black;
+    position : absolute;
+    color : white;
+    width : 100%;
+
+}
+
+nav .nav-list{
+    list-style: none;
+    display: flex;
+}
+
+nav  .nav-element{
+    display: flex;
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+    border : solid transparent  0px 0px 0.2rem;
+    align-items: center;
+    gap : 5px;
+}
+
+nav .nav-list .nav-element{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 0.8rem;
+}
+
+nav  .nav-element a{
+    color : white;
+}
+
+
+nav{
+    width : 80%;
+    display: flex;
+    font-weight: 200;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    margin : 0 auto;
+    -webkit-user-select: none;
+    padding : 1.7rem 0px;
+}
