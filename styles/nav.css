@@ -1,9 +1,21 @@
 header{
-    background-color: black;
     position : absolute;
     color : white;
     width : 100%;
 
+}
+
+
+nav{
+    width : 84%;
+    display: flex;
+    font-weight: 200;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    margin : 0 auto;
+    -webkit-user-select: none;
+    padding : 1.7rem 0px;
 }
 
 nav .nav-list{
@@ -24,24 +36,11 @@ nav  .nav-element{
 
 nav .nav-list .nav-element{
     margin-right: 2rem;
-    font-size: 1.8rem;
-    font-weight: 100;
+    font-size: 1.9rem;
+    font-weight: lighter;
     padding: 0.8rem;
 }
 
 nav  .nav-element a{
     color : white;
-}
-
-
-nav{
-    width : 80%;
-    display: flex;
-    font-weight: 200;
-    background: transparent;
-    align-items: center;
-    justify-content: space-between;
-    margin : 0 auto;
-    -webkit-user-select: none;
-    padding : 1.7rem 0px;
 }

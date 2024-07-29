@@ -1,0 +1,133 @@
+.top{
+    position: relative;
+    height : calc(100vh - 30rem);
+    min-height: 42rem;
+    max-height: 57rem;
+    margin-bottom: 4rem;
+}
+
+
+.top .bg-image{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left : 0px;
+    height : calc(100vh - 30rem);
+    min-height: 42rem;
+    max-height: 57rem;
+    margin-bottom: 4rem;
+    object-fit: cover;
+    width : 100%; 
+    -webkit-user-select: none;
+}
+
+
+.top .center-content{
+    position: absolute;
+    bottom : calc(50% - 11.1rem);
+    left : 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .main-logo{
+    height : 6rem;
+    width  : 30rem;
+    position: relative;
+}
+
+
+main .top .header{
+    text-align: center;
+    color: white;
+    font-size: 3.6rem;
+    margin-top: 3rem;
+    white-space: nowrap;
+    font-weight: 100;
+}
+
+
+main .top .header .city{
+    font-weight: 700;
+}
+
+
+main .top .search-container{
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow : rgba(28, 28, 28, 0.08), 8px, 2px, 8px;
+    border : solid 1px rgb(232, 232, 232);
+    height : 5.4rem;
+    align-items: center;
+    width : 77rem;
+}
+
+
+main .top .search-container input{
+    border : none;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    margin : 0px 1rem 0px 0.5rem ;
+    flex : 1;
+}
+
+
+main .top .search-container .location{
+    width : max-content;
+    position : relative;
+    justify-content: space-around;
+    padding : 0 1rem;
+    height : 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+main .top .search-container .search{
+    display : flex;
+    border-radius: 0.8rem;
+    width : 53rem;
+    height : 100%;
+    gap: 1.5rem;
+    position: relative;
+}
+
+main .top .search-container .search .search_icon{
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    width : 6rem;
+    margin : -1px -0.6rem -1px -1px;
+}
+
+
+main .top .search-container .location svg{
+    color : rgb(255, 26, 39);
+    width : 2rem;
+    height : auto;
+}
+
+
+main .top .search-container .search svg{
+    color : rgb(130, 130, 130);
+}
+
+
+main .top .search-container .line{
+    width : 0rem;
+    height :2rem;
+    border : 0.05rem solid rgba(207, 207, 207);
+}
+
+main .top .search-container input{
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    margin : 0px 1rem 0px 0.5rem ;
+}
+
+
+
