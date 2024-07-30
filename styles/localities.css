@@ -1,0 +1,77 @@
+.localities{
+    text-align: left;
+}
+
+.localities .heading{
+    font-size: 3.6rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    color : rgb(54, 54, 54);
+}
+
+.localities .heading .city{
+    font-weight: 500;
+}
+
+.localities-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1.5rem;
+    width : 100%;
+    margin-bottom: 10rem;;
+}
+
+.locality{
+    padding : 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom : 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    width : 30%;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+    font-size : 1.6rem;
+
+}
+
+.locality-title{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color : rgba(28, 28,  28);
+    margin : 0px 0px 0.5rem;
+}
+
+.localitiy .places{
+    font-size: inherit;
+    font-weight: 200;
+    color : rgb(54,  54, 54);
+}
+
+.locality:hover{
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
+}
+
+.more{
+    display : flex;
+    width : 100%;
+    height : 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    line-height : 1.2;
+    font-weight: 400;
+    color : rgba(28, 28,  28);
+    margin: 0px 0px 0.5rem;
+    gap : 1rem;
+}
+
+
+
+
+
+
+

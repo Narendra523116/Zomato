@@ -1,0 +1,139 @@
+
+.app-section{
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color : rgb(255, 251, 247);
+}
+
+.app-section .app-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.app-section .phone-image{
+    display: flex;
+    align-items: center;
+    position : relative;
+    top : 5rem;
+    max-width: 100%;
+    height: 60rem;
+    width : auto;
+    overflow: hidden;
+}
+
+
+.app-section .phone-image img{
+    height : 80%;
+    max-width : auto;
+    object-fit: contain;
+}
+
+
+.app-heading{
+    color : rgb(28,  28, 28);
+    margin : 0px 0px 1.5rem;
+    font-weight: 500;
+    font-size : 4.4rem;
+    line-height: 5.6rem;
+}
+
+.app-description{
+    margin : 0px 0px 2.5rem;
+    color : rgb(54, 54, 54);
+    line-height: 3.2rem;
+    width : 100%;
+    font-size : 1.6rem;
+    font-weight:200;
+}
+
+input[type="radio"]{
+    accent-color: rgb(239, 79,  95);
+    width : 1.6rem;
+    height : 1.6rem;
+}
+
+.app-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : 50%;
+}
+
+.app-option{
+    display: flex;;
+    align-items: center;
+    gap : 0.5rem;
+    font-size : 1.6rem;
+    height : 4rem;
+}
+
+.email-input{
+    display: flex;
+    margin-bottom : 1rem;
+    gap : 10px;
+}
+
+.email-input input[type="email"]{
+    padding: 1.3rem 1.2rem;
+    height : 4.8rem;
+    background-color: white;
+    border : 0.1rem solid rgb(207, 207, 207);
+    font-size: 1.8rem;
+    width: 100%;
+    outline:none;
+    color : rgb(28, 28, 28);
+    font-weight: 200;
+    box-sizing:border-box;
+    border-radius: 0.6rem;
+}
+
+.email-input .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 15rem;
+    background-color: rgb(239, 79, 95);
+    border : none;
+    color : rgb(255, 255, 255);
+    white-space: nowrap;
+    padding : 0 1.6rem;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    border-radius: 0.6rem;
+    /* transition: all 0.2s ease; */
+}
+
+.email-input .btn:hover{
+    background-color: rgb(242, 60, 78);
+}
+
+.store-description{
+    font-size: 1.4rem;
+    margin: 0px 0px 1.5rem;
+    color: rgb(156, 156, 156);
+    line-height: 1.5;
+}
+
+.store-buttons{
+    align-items: center;
+    gap : 2rem;
+}
+
+.store-buttons img{
+    object-fit: cover;
+    max-width: 100%;
+    width : 13.7rem;
+    height : 4rem;
+    cursor : pointer;
+}
+
+
+
+
+
+
