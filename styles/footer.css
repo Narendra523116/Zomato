@@ -1,0 +1,149 @@
+footer{
+    width : 100%;
+    background-color: rgb(248, 248, 248);
+    flex-wrap: wrap;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.footer-data{
+    width : 110rem;
+    max-width : 110rem;
+    padding : 4.8rem 0px 2.2rem;
+}
+
+.top-section{
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.top-section > img{
+    height : 2.8rem;
+    width : 13.2rem;
+}
+
+.dropdowns{
+    align-items: center;
+    height : 100%;
+    gap : 2rem;
+}
+
+.top-section .dropdown{
+    min-width: 10rem;
+    max-width: max-content;
+    cursor: pointer;
+    position: relative;
+    padding : 0.7rem 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.6rem;
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: 200;
+    gap : 5px;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: ellipsis;
+    flex: 1;
+}
+
+.India-logo{
+    height : 2.4rem;
+    width : auto;
+}
+
+.middle-section{
+    width : 100%;
+    display: flex;
+    position : relative;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    -webkit-box-pack : justify;
+    font-size: 1.6rem;
+}
+
+.footer-links{
+    position: relative;
+    width : 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 18.333%;
+    box-sizing : border-box;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links > h6{
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    margin : 0px 0px 1.2rem;
+    width : 100%;
+    text-transform: uppercase;
+}
+
+.footer-links li{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color : rgb(105, 105,105);
+    margin: 0.5rem 0px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 300;
+}
+
+.social-links{
+    display: flex;
+    justify-content: flex;
+    -webkit-box-pack:start;
+}
+
+.spacing{
+    margin-top: 1.2rem;;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+
+.horizontal{
+    margin-top: 5rem;
+    border-width: 1px 0px 0px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-top-style: solid;
+    border-top-color: rgb(207, 207, 207);
+}
+
+.footer-end{
+    font-size: 1.3rem;
+    color: rgb(79, 79, 79);
+    line-height: 1.7rem;
+    margin-top: 2.3rem;
+    font-weight: 300;
+}
+
+.end{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
