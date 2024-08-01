@@ -65,3 +65,43 @@
     line-height: 1.5;
     margin : 0px;
 }
+
+@media(max-width : 800px){
+    .options{
+        flex-wrap: wrap;
+    }
+
+    .option{
+        max-width : 45%;
+        flex : auto;
+        height : 
+    }
+
+    .info-title{
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+
+    .info-description{
+        font-size: 1.2;
+        font-weight: 200;
+    }
+}
+
+@media(max-width : 500px){
+    .option{
+        max-width : 45%;
+        flex:auto;
+        height : 24rem;
+    }
+
+    .info-title{
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+
+    .info-description{
+        font-size: 1.2;
+        font-weight: 200;
+    }
+}

@@ -130,6 +130,12 @@
     padding-bottom : 0.5rem;
 }
 
+@media (max-width: 800px){
+    .explore-options{
+        padding : 5px 2.4rem;
+        max-width: 100%;
+    }
+}
 
 
 

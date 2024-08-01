@@ -136,6 +136,27 @@ input[type="radio"]{
     cursor : pointer;
 }
 
+@media(max-width : 800px){
+
+    .app-content{
+        margin-top: 7.5rem !important;
+        max-width: 42.4rem !important;
+        margin : 0px 2.4rem;
+    }
+
+    .app-info{
+        
+    }
+
+    .app-section{
+        width : 100% !important;
+        padding : 0 1rem;
+    }
+    .phone-image{
+        display: none;
+    }
+}
+
 
 
 

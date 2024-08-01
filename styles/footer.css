@@ -141,6 +141,30 @@ footer{
     align-items: center;
 }
 
+@media(max-width : 800px){
+    .footer-data{
+        padding : 
+    }
+
+    .socials{
+        display: none;
+    }
+
+    .top-section{
+        flex-direction: column !important;
+    }
+
+    footer .top-section > img{
+        margin-bottom: 3rem !important;
+    }
+
+    .middle-section .footer-links{
+        max-width: 50% !important;
+        margin-bottom : 3rem;
+        font-size: 1.6rem;
+    }
+}
+
 
 
 

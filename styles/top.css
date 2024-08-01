@@ -137,5 +137,53 @@ main .top .search-container input{
     box-sizing: border-box  ;
 }
 
+@media (max-width : 800px){
+    .main-logo{
+        height : 3rem !important;
+        width : 16rem !important;
+    }
+
+    .search-container{
+        flex-direction: column;
+        width : calc(100% - 2.4rem) !important;
+
+    }
+
+    main .top .search-container{
+        justify-content: space-between;
+        width: 100% !important;
+    }
+
+    main .top .search-container .location{
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+        width: 50% !important;
+        justify-content: space-between;
+        gap: 2rem;
+        height: 5rem;
+        flex: 1;
+        background-color: white;;
+    }
+
+    main .top .search-container .location input{
+        flex : 1;
+    }
+
+    main .search-container .search{
+        margin-top: 1.8rem;
+        background-color: white;
+        padding : 1.5rem 1rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    main .search_container .search{
+
+    }
+
+
+
+}
+
 
 
