@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
     background-color : rgb(255, 251, 247);
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .app-section .app-content{
