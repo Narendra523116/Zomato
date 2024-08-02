@@ -7,6 +7,17 @@
     font-weight: 100;
     margin-bottom: 4rem;
     color : rgb(54, 54, 54);
+    text-align: center;
+}
+
+.wrap-locality{
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 33.3333%;
+    padding: 0px 10px 15px 0px;
 }
 
 .localities .heading .city{
@@ -14,12 +25,17 @@
 }
 
 .localities-list{
+    width: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap : 1.5rem;
-    width : 100%;
-    margin-bottom: 10rem;;
 }
+
+
+.localities-list .wrap-locality a{
+    text-decoration: none;
+}
+
 
 .locality{
     padding : 1.2rem 1.5rem;
@@ -31,13 +47,16 @@
     justify-content: space-between;
     align-items: center;
     cursor:pointer;
-    width : 30%;
+    width : auto;
     box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
     font-size : 1.6rem;
-
 }
 
+
 .locality-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 400;
@@ -45,7 +64,29 @@
     margin : 0px 0px 0.5rem;
 }
 
-.localitiy .places{
+.locality .left{
+    width: calc(100% - 3.5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.locality svg, .view-more svg{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit;
+    margin-left: 2rem;
+    flex-shrink: 0;
+    color : rgb(28, 28, 28);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: 15px;
+    height: 15px;
+}
+
+
+.locality .places{
     font-size: inherit;
     font-weight: 200;
     color : rgb(54,  54, 54);
@@ -55,37 +96,81 @@
     box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
 }
 
-.more{
-    display : flex;
-    width : 100%;
-    height : 100%;
+
+.view-more{
+    width: inherit;
+    height: 7.9rem;
+    display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
-    font-size: 1.9rem;
-    line-height : 1.2;
-    font-weight: 400;
-    color : rgba(28, 28,  28);
-    margin: 0px 0px 0.5rem;
-    gap : 1rem;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    box-sizing: border-box;
+    border-radius: 6px;
+    color : rgba(28, 28, 28);
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
 }
 
-@media (max-width : 800px){
-    .localities-list{
-        flex-direction: column;
-        max-width: 100%;
+.more{
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+@media (max-width : 480px){
+
+    .localities{
+        margin-bottom: 4.8rem;
     }
 
-    .localitiy{
-        width : 100%;
+    .wrap-locality{
+        max-width: 100% !important;
     }
 
-    .localitiy-title{
+    .locality{
+        padding: 1.8rem 2.2rem;
+        margin-bottom: 0px;
+    }
+
+    .localities .heading{
         font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.4rem;
         margin-bottom: 2rem;
     }
+
+    .locality-title{
+        font-size: 1.4rem;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+
+    .localities .heading .city{
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .localities-list{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .localities-list .locality{
+        padding: 1.8rem 2.2rem;
+        margin-bottom: 0px;
+    }
+
+    .view-more .more{
+        font-size: 1.4rem;
+    }
+
 }
+
 
 
 

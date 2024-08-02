@@ -132,6 +132,8 @@ footer{
     line-height: 1.7rem;
     margin-top: 2.3rem;
     font-weight: 300;
+    width : 100%;
+
 }
 
 .end{
@@ -141,33 +143,105 @@ footer{
     align-items: center;
 }
 
-@media(max-width : 800px){
+.footer-buttons-hide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width : 100% !important;
+}
+
+.footer-buttons-hide img{
+    object-fit: cover;
+    max-width: 100%;
+    width : 13.7rem;
+    height : 4rem;
+    cursor : pointer;
+}
+
+.social-heading{
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.footer-socials{
+    margin: 0.4rem 0px 0px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.hiding{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 1rem;
+    max-width : 100% !important;
+}
+
+.hiding > .heading-6{
+    margin: 0.4rem 0px 0px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-buttons-hide > div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hiding .middle{
+    margin-top: 0.5rem;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.visible{
+    flex:1;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
     .footer-data{
-        padding : 
+        max-width: 72rem;
+        margin: 0px 2.4rem;
     }
+}
 
-    .socials{
-        display: none;
-    }
-
-    .top-section{
-        flex-direction: column !important;
-    }
+@media(max-width : 800px){
 
     footer .top-section > img{
         margin-bottom: 3rem !important;
     }
 
-    .middle-section .footer-links{
-        max-width: 50% !important;
+    .footer-links{
+        max-width: 50%;
         margin-bottom : 3rem;
         font-size: 1.6rem;
     }
+
+    .footer-links:nth-child(5){
+        display: none;
+    }
+
+    .hiding{
+        display: block;
+        margin-bottom: 1.5rem;
+    }
 }
 
+@media (max-width: 480px) {
 
-
-
-
-
-
+    .top-section{
+        flex-direction: column !important;
+        justify-content: flex-start;
+    }
+}
