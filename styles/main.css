@@ -1,16 +1,12 @@
 .main-body{
+    position: relative;
     max-width: 110rem;
-    width : 100%;
-    margin:auto;
-
+    max-height: initial;
+    margin: 0px auto;
 }
 
 @media((min-width: 481px) and (max-width: 768px)){
     .main-body{
-<<<<<<< HEAD
-        max-width: 42.4rem;
-        margin: 0px 2.4rem;
-=======
         max-width: 72rem;
         margin: 0px 2.4rem;
     }
@@ -21,7 +17,6 @@
         max-width: 42.4rem;
         margin: 0px 2.4rem;
         padding: 0px;
->>>>>>> 8050490a83698ff6ad2145f1a6ed1bcebe4d767d
     }
 }
 

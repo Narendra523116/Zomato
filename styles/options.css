@@ -1,3 +1,12 @@
+.options-wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 6rem;
+}
+
 .options{
     display: flex;
     flex-direction: row;
@@ -6,34 +15,29 @@
 }
 
 .option-wrapper{
-    border-radius: 1.2rem;
     position: relative;
-    max-width: 50%;
     width: 100%;
-    overflow: hidden;
-    flex : 1;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 50%;
+    padding: 0px 10px 20px 0px;
     transition: transform 300ms ease 0s;
 }
 
 .option{
     flex : 1;
     height : 24rem;
-    margin : 0 0.6rem;
     border-radius: 1.2rem;
     overflow: hidden;
     position: relative;
     flex : 1;
 }
 
-.opt{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .option-wrapper:hover{
     transform : scale(1.05);
+    z-index: 1;
 }
 
 .image{
@@ -50,14 +54,15 @@
 }
 
 .info{
+    padding: 1rem 2rem 1.6rem;
+    width: 100%;
     position: absolute;
-    bottom : 0rem;
-    left : 0;
-    background-color: white;
-    width : 100%;
-    padding : 1rem 2rem 1.6rem;
-    border-bottom-right-radius: 1.2rem;
-    border-bottom-left-radius: 1.2rem;
+    bottom: 0px;
+    left: 0px;
+    background: white;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 0px 0px 1.2rem 1.2rem;
+    box-sizing: border-box;
 }
 
 .info-title{
@@ -78,16 +83,6 @@
     margin : 0px;
 }
 
-<<<<<<< HEAD
-
-@media(max-width : 480px){
-
-    .options{
-        margin-bottom : 6rem;
-    }
-
-    .option{
-=======
 @media(max-width : 768px){
 
     .info{
@@ -108,7 +103,6 @@
 @media(max-width : 480px){
 
     .option-wrapper{
->>>>>>> 8050490a83698ff6ad2145f1a6ed1bcebe4d767d
         padding: 0px 10px 20px 0px;
         max-width: 50%;
     }

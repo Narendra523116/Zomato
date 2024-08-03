@@ -188,26 +188,12 @@ main .top .search-container .search-box{
 
 }
 
-<<<<<<< HEAD
-@media(max-width : 480px){
-=======
 @media (max-width : 480px){
 
->>>>>>> 8050490a83698ff6ad2145f1a6ed1bcebe4d767d
     .top{
         margin-bottom: 1.5rem;
     }
 
-<<<<<<< HEAD
-    .center-content .header{
-        margin-top: 2rem;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 32px;
-    }
-
-    
-=======
     .options-wrapper{
         margin-bottom: 6rem;;
     }
@@ -218,7 +204,6 @@ main .top .search-container .search-box{
         font-size: 20px !important;
         line-height: 32px !important;
     }
->>>>>>> 8050490a83698ff6ad2145f1a6ed1bcebe4d767d
 }
 
 
