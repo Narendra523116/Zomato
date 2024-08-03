@@ -31,11 +31,9 @@
     flex-wrap: wrap;
 }
 
-
 .localities-list .wrap-locality a{
     text-decoration: none;
 }
-
 
 .locality{
     padding : 1.2rem 1.5rem;
@@ -99,7 +97,7 @@
 
 .view-more{
     width: inherit;
-    height: 7.9rem;
+    height: 7.4rem;
     display: flex;
     -webkit-box-align: center;
     align-items: center;

@@ -7,7 +7,8 @@
 
 @media(max-width : 800px){
     .main-body{
-        padding: 0px 2.4rem;
+        max-width: 42.4rem;
+        margin: 0px 2.4rem;
     }
 }
 

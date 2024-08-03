@@ -186,5 +186,20 @@ main .top .search-container .search-box{
 
 }
 
+@media(max-width : 480px){
+    .top{
+        margin-bottom: 1.5rem;
+    }
+
+    .center-content .header{
+        margin-top: 2rem;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    
+}
+
 
 

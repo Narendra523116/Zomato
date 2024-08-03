@@ -58,7 +58,6 @@ nav  .nav-element a{
 
 
 @media (max-width : 800px){
-
     nav{
         justify-content: flex-end;
         padding : 0 1rem;
