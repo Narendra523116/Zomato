@@ -37,6 +37,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
 }
 
 
@@ -184,6 +186,24 @@ main .top .search-container .search-box{
         margin-left: 1.5rem;
     }
 
+}
+
+@media (max-width : 480px){
+
+    .top{
+        margin-bottom: 1.5rem;
+    }
+
+    .options-wrapper{
+        margin-bottom: 6rem;;
+    }
+
+    .center-content .header{
+        margin-top: 2rem !important;
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        line-height: 32px !important;
+    }
 }
 
 
