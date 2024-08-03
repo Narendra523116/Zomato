@@ -25,6 +25,14 @@
     transition: transform 300ms ease 0s;
 }
 
+.left{
+    padding: 0px 10px 20px 0px;
+}
+
+.right{
+    padding: 0px 0px 20px 10px;
+}
+
 .option{
     flex : 1;
     height : 24rem;
@@ -105,6 +113,12 @@
     .option-wrapper{
         padding: 0px 10px 20px 0px;
         max-width: 50%;
+    }
+
+    .right{
+        padding: 0px 0px 20px 10px;
+        max-width: 50%;
+        width: 100%;
     }
 
     .option{
