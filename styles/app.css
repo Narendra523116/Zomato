@@ -238,8 +238,14 @@ input[type="radio"]{
 
 @media (max-width: 480px) {
 
+    .app-content-wrapper{
+        max-width: 42.4rem !important;
+        margin: 0px 2.4rem !important;
+        margin-top: 7.5rem !important;
+    }
+
     .phone-image-wrapper{
-        display: none;
+        display: none !important;
     }
 
     .app-info{
