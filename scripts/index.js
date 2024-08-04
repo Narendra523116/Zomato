@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded',  function(){
 
             data.classList.toggle("show");
             icon.classList.toggle("animate");
+   
         });
     });
 });
