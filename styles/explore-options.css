@@ -1,10 +1,10 @@
 .explore-options{
-    width : 100%;
     background-color: rgb(252, 252,  252);
 }
 
 .wrapper{
-    width : 110rem;
+    max-width : 110rem !important;
+    max-height: initial;
     margin : 0 auto;
     padding : 5rem 0;
 }
@@ -21,21 +21,16 @@
     flex-direction: column;
 }
 
-.according-container i{
-    font-size : 15px;
-    transition: 0.2s;
-    transition: all 300ms ease-out ;
-}
-
-.according{
-    display: flex;
-    flex-direction: column;
-    border : solid 1px rgb(232,  232, 232);
-    margin-bottom : 2rem ;
-    padding : 2rem 2.4rem;
-    border-radius: 0.8rem;
+.according-container{
+    margin-top: 0px;
+    margin-left: 0px;
     cursor: pointer;
-    background-color: white;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 2rem 2.4rem;
 }
 
 .according-container{
@@ -44,6 +39,7 @@
     justify-content: space-between;
     height : 100%;
     width : 100%;
+    transition: all 0.6s ease linear;
 }
 
 .according-title{
@@ -57,35 +53,23 @@
 
 .according-data{
     display: none;
-    margin-top : 2rem;
+    color: rgb(105, 105, 105);
+    padding: 1rem 2.4rem 2rem;
+    max-height: 1000rem;
+    pointer-events: auto;
+    opacity: 1;
+    transition: max-height 0.25s ease-in-out, opacity 0.5s linear 0.25s;
 }
 
-.according-data ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    max-width : 100%;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-.according-data li{
+.according-data .options-link{
     text-decoration: none;
-    color : rgb(130, 130, 130);
-    font-size : 1.6rem;
-    line-height: 1.8rem;
+    color: rgb(130, 130, 130);
+    font-size: 1.6rem;
+    line-height: 1.8;
     margin-right: 1rem;
-    font-weight : 200;
-    max-width :100%;
-    margin-bottom: 1.3rem;
-    letter-spacing: 0.01rem;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
-.according-data li:hover{
+.according-data .options-link:hover{
     color : black;
 }
 
@@ -114,32 +98,87 @@
     transform: rotate(-180deg);
 }
 
-.explore-cities, .restaraunt-chains{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.explore-cities > li, .restaraunt-chains > li{
-    padding : 0.5rem 0;
-}
-
 .explore-cities  .all-cities{
     color : black ;
     width : max-content;
+    text-overflow: ellipsis;
     border-bottom: solid black 0.1rem;
     padding-bottom : 0.5rem;
 }
 
-@media (max-width: 800px){
-    .explore-options{
-        padding : 5px 2.4rem;
-        max-width: 100%;
+.explore-cities, .restaurant-chains{
+    display: inline-block;
+}
+
+
+.according{
+    padding: 0px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    box-shadow: none;
+    margin-bottom: 1.5rem;
+    border : 1px solid rgb(232, 232, 232);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.explore-cities .options-link, .restaurant-chains .options-link{
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+    margin-bottom: 1.2rem;
+    margin-right: 0px !important;
+    width: 20%;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+@media (max-width: 480px){
+
+    .explore-cities .options-link, .restaurant-chains .options-link{
+        width: 50% !important;
+        font-size: 1.2rem !important;
+        line-height: 1.8 !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    .options-link{
+        width: 50% !important;
+        font-size: 1.2rem !important;
+        line-height: 1.8 !important;
+    }
+
+    .wrapper{
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+        max-width: 42.4rem;
+        margin: 0px 2.4rem;
+    }
+
+    .explore-heading{
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .according {
+        margin-bottom: 1.5rem;
     }
 }
 
-@media(max-width:480px){
-    
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        max-width: 72rem !important;
+        margin: 0px 2.4rem !important;
+    }
 }
+
 
 
 
