@@ -7,7 +7,6 @@
     font-weight: 100;
     margin-bottom: 4rem;
     color : rgb(54, 54, 54);
-    text-align: center;
 }
 
 .wrap-locality{
@@ -133,6 +132,7 @@
         padding: 1.8rem 2.2rem;
         margin-bottom: 0px;
     }
+
 
     .localities .heading{
         font-weight: 500;
