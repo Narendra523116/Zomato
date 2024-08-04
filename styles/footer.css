@@ -202,6 +202,9 @@ footer{
     cursor : pointer;
 }
 
+.social-end{
+    align-items: flex-start;
+}
 
 @media (min-width: 300px) and (max-width: 768px) {
     .footer-data{
