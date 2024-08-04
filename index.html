@@ -370,43 +370,59 @@
 
         <section class="app-section">
 
-            <div class="app-content">
+            <div class="app-content-wrapper">
+                <div class="app-content">
 
-                <div class="phone-image">
-                    <img src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="phone">
-                </div>
-
-                <div class="app-info">
-                    <div class="app-heading">Get the zomato app</div>
-                    <div class="app-description">We will send you a link, open it on your phone to download the app</div>
-
-                    <div class="app-options">
-                        <label for="email" class="app-option">
-                            <input id="email" value="email" name="input" type="radio" checked>Email</label>
-                        
-                        <label for="phone"
-                        class="app-option"><input id="phone" value="phone" name="input" type="radio" checked>Phone</label>
-                    </div>
-
-                    <div class="email-input">
-                        <input type="email" placeholder="Email" id="email-input"/>
-                        <button class="btn" type="submit">Share App Link</button>
-                    </div>
-
-                    <div class="store">
-                        <div class="store-description">Downlaod app from</div>
-                        <div class="store-buttons row">
-                            <a href="#">
-                                <img class="store-image" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store"/>
-                            </a>
-                            <a href="#">
-                                <img class="store-image" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="app store"/>
-                            </a>
+                    <div class="phone-image-wrapper">
+                        <div class="phone-image">
+                            <img src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="phone">
                         </div>
                     </div>
+    
+                    <div class="app-info">
+                        <div class="app-heading">Get the zomato app</div>
+                        <div class="app-description">We will send you a link, open it on your phone to download the app</div>
+    
+                        <div class="app-options">
+                            <div class="app-option-wrapper">
+                                <label for="email" class="app-option">
+                                <input id="email" value="email" name="input" type="radio" checked>Email</label>
+                            </div>
+                            
+                            <div class="app-option-wrapper">
+                                <label for="phone" class="app-option">
+                                <input id="phone" value="phone" name="input" type="radio" checked>Phone</label>
+                            </div>
+                        </div>
+    
+                        <div class="email-input">
+                            <div class="email-wrapper">
+                                <input type="email" placeholder="Email" id="email-input"/>
+                                <div class="email-spacing"></div>
+                            </div>
+                            <button class="btn" type="submit">Share</button>
+                        </div>
 
+                        <div class="store-description">Downlaod app from</div>
+    
+                        <div class="store">
+                            <div class="store-buttons row">
+                                <a href="#">
+                                    <div class="image-wrapper">
+                                        <img class="store-image" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="google play store"/>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="image-wrapper">
+                                        <img class="store-image" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="app store"/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+    
                 </div>
-
             </div>
 
         </section>

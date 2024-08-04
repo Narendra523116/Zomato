@@ -11,10 +11,27 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+.app-section .app-content-wrapper{
+    position: relative;
+    max-width: 90rem;
+    max-height: initial;
+    margin: 3rem auto 0px;
+}
+
+.app-content-wrapper .phone-image-wrapper{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    width: 100%;
+}
+
+
 .app-section .app-content{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 
@@ -65,6 +82,7 @@ input[type="radio"]{
     flex-direction: row;
     justify-content: space-between;
     width : 50%;
+    height : 4rem;
 }
 
 .app-option{
@@ -77,8 +95,10 @@ input[type="radio"]{
 
 .email-input{
     display: flex;
-    margin-bottom : 1rem;
-    gap : 10px;
+    -webkit-box-align: start;
+    align-items: start;
+    height: 100%;
+    margin-bottom: 1rem;
 }
 
 .email-input input[type="email"]{
@@ -100,15 +120,20 @@ input[type="radio"]{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    min-width: 15rem;
+    max-width : fit-content;
     background-color: rgb(239, 79, 95);
     border : none;
     color : rgb(255, 255, 255);
     white-space: nowrap;
     padding : 0 1.6rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 32px;
     font-weight: lighter;
     border-radius: 0.6rem;
+    min-width: auto;
+    min-height: 32px;
+    margin-left: 0.8rem;
+    height : 48px;
     /* transition: all 0.2s ease; */
 }
 
@@ -128,32 +153,127 @@ input[type="radio"]{
     gap : 2rem;
 }
 
+.store-buttons .image-wrapper{
+    position: relative;
+    max-width: 100%;
+    width: 13.7rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
 .store-buttons img{
     object-fit: cover;
     max-width: 100%;
-    width : 13.7rem;
-    height : 4rem;
+    width : 100%;
+    height : 100%;
     cursor : pointer;
 }
 
+.app-info{
+    position: relative;
+    top: -2.5rem;
+    width: 45rem;
+    margin-left: 2rem;
+    flex-shrink: 0;
+}
+
+.app-option-wrapper{
+    width: max-content;
+    margin-bottom: 1.6rem;
+    margin-right: 2.4rem;
+}
+
+.email-spacing{
+    height: 13px;
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 2px;
+}
+
+
 @media(max-width : 800px){
 
-    .app-content{
-        margin-top: 7.5rem !important;
-        max-width: 42.4rem !important;
-        margin : 0px 2.4rem;
+    .email-input{
+        width: 300px;
+    }
+
+    .app-description {
+        width: 80%;
+        line-height: 1.2;
+    }
+
+    .app-heading{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+
+    .app-info{
+        padding-left: 2.5rem;
+        margin-left: 0px;
+        width : 48%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .app-content-wrapper {
+        max-width: 72rem !important;
+        margin: 0px 2.4rem !important;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .app-options {
+        width: 100%;
+    }
+
+    .store-buttons {
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .phone-image-wrapper{
+        display: none;
     }
 
     .app-info{
-        
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        justify-content: center;
     }
 
-    .app-section{
-        width : 100% !important;
-        padding : 0 1rem;
+    .app-options {
+        -webkit-box-pack: start !important;
+        justify-content: flex-start !important;
     }
-    .phone-image{
-        display: none;
+
+    .app-heading{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .app-description {
+        display: flex;
+        justify-content: space-around;
+        margin : 0 auto;
+        margin-bottom: 2.5rem !important;
+        max-width: 100% !important;
+        font-size: 1.6rem;
+        line-height: 1.2 !important;
+    }
+
+    .email-input {
+        -webkit-box-pack: center;
+        justify-content: center;
     }
 }
 
